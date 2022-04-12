@@ -11,7 +11,68 @@
     />
   </head>
   <body>
-    tutaj kupisz wszystko
+    <section class="products">
+      <h1>Lista produktów</h1>
+      <ul class="products-list">
+        <li>
+          <strong>Ogórki kiszone</strong> - 9.99
+          <button
+            class="btn-buy-product"
+            data-name="Ogórki kiszone"
+            data-price="9.99"
+          >
+            Kup!
+          </button>
+        </li>
+        <li>
+          <strong>Pomidorki</strong> - 7.50
+          <button
+            class="btn-buy-product"
+            data-name="Pomidorki"
+            data-price="7.5"
+          >
+            Kup!
+          </button>
+        </li>
+        <li>
+          <strong>Mercedes C Klasa</strong> - 109000.00
+          <button
+            class="btn-buy-product"
+            data-name="Mercedes C Klasa"
+            data-price="109000"
+          >
+            Kup!
+          </button>
+        </li>
+      </ul>
+    </section>
+    <section class="basket">
+      <h1>Koszyk</h1>
+      <ul class="basket-list"></ul>
+      <button class="btn-buy-all" disabled>Złóż zamówienie</button>
+    </section>
+    <section class="admin-add-product">
+      <h1>Administracja: dodaj produkt</h1>
+      <form class="form-add-product">
+        <input
+          type="text"
+          name="product-name"
+          placeholder="Podaj nazwę..."
+          required
+        />
+        <input
+          type="number"
+          name="product-price"
+          placeholder="Podaj cenę..."
+          required
+        />
+        <button type="submit" class="btn btn-primary">Dodaj</button>
+      </form>
+    </section>
+
+    <script src="./js/basket.js"></script>
+    <script src="./js/ui.js"></script>
+    <script src="./js/admin-ui.js"></script>
 
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
